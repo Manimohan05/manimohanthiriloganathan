@@ -1,0 +1,123 @@
+.skills_container{
+    grid-template-columns: repeat(3, 300px);
+    column-gap: 3rem;
+    justify-content: center;
+}
+
+
+.skills_content{
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0,0,0.1);
+    padding: 2rem 4rem;
+    border-radius: 1.25rem;
+}
+
+.skills_title{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi-bold);
+    text-align: center;
+    margin-bottom: var(--mb-1-5);
+    color: black;
+    opacity: 0;
+    animation: sideShowup .5s ease forwards;
+}
+.skills_box{
+    display:flex ;
+    justify-content: center;
+    column-gap: 2.5rem;
+
+    opacity: 0;
+    animation: sideShow .5s ease forwards;
+}
+
+
+.skills_group {
+    flex: 1 1 calc(33.33% - 1rem);
+    text-align: center;
+    margin-bottom: 1rem;
+    gap: 1.5rem; 
+}
+
+.skills_group ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+}
+
+.skills_group li {
+    margin-bottom: 1rem; 
+}
+
+.skills_group li .bx-badge-check {
+    margin-right: 0.5rem; 
+}
+
+
+.skills .bx-badge-check{
+    font-size: 1rem;
+    color: var(--title-color);
+}
+
+.skills_name{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 18px;
+}
+
+.skills_name span{
+    font-size: var(--tiny-font-size);
+}
+
+@media screen and (max-width: 992px){
+    .skills_container{
+        grid-template-columns: max-content;
+        row-gap: 2rem;
+    }
+  
+  }
+  
+   
+  
+  @media screen and (max-width: 576px){
+    .skills_container{
+        grid-template-columns: 1fr;
+    }
+
+    .skills_content{
+        padding: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 350px){
+    .skills_box{
+        column-gap: 1.25rem;
+    }
+
+    .skills_name{
+        font-size: var(--small-font-size);
+    }
+    
+  }
+
+  @keyframes sideShow {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes sideShowup {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+  
