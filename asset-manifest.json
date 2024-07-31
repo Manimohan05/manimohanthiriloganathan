@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/manimohanthiriloganathan/static/css/main.32b55cc3.css",
+    "main.js": "/manimohanthiriloganathan/static/js/main.870e9c7f.js",
+    "static/media/project8.jpg": "/manimohanthiriloganathan/static/media/project8.d2a8816727389a5825c9.jpg",
+    "static/media/Resume_Manimohan_T.pdf": "/manimohanthiriloganathan/static/media/Resume_Manimohan_T.24d406e9f199a9828a34.pdf",
+    "static/media/project6.jpg": "/manimohanthiriloganathan/static/media/project6.9af782851b30fb1683aa.jpg",
+    "static/media/project2.jpg": "/manimohanthiriloganathan/static/media/project2.e953b4a1c715cf7d4f8a.jpg",
+    "static/media/Profile.jpg": "/manimohanthiriloganathan/static/media/Profile.5c7d8665fb921103de2d.jpg",
+    "static/media/project4.jpeg": "/manimohanthiriloganathan/static/media/project4.fcc50ef1ce5953bf3840.jpeg",
+    "index.html": "/manimohanthiriloganathan/index.html",
+    "main.32b55cc3.css.map": "/manimohanthiriloganathan/static/css/main.32b55cc3.css.map",
+    "main.870e9c7f.js.map": "/manimohanthiriloganathan/static/js/main.870e9c7f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32b55cc3.css",
+    "static/js/main.870e9c7f.js"
+  ]
+}
