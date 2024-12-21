@@ -40,6 +40,7 @@ const Frameworks = () => {
         { name: "MEAN", icon: mean},
       ],
     },
+    
   ];
 
   return (

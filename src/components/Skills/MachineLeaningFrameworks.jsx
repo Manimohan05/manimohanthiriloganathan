@@ -32,12 +32,6 @@ const Frameworks = () => {
         { name: "Diffusers by hugging face", icon: huggingFace },
       ],
     },
-    {
-      category: "Other Tools",
-      items: [
-        { name: "MLflow", icon:ML }, // Use MLflow icon
-      ],
-    },
   ];
 
   return (
