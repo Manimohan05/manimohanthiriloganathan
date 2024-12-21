@@ -15,7 +15,6 @@ const Frameworks = () => {
           name: "Angular",
           icon: "https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-angular-a-typescript-based-open-source-web-application-framework-logo-color-tal-revivo.png",
         },
-        { name: "Vue.js", icon: "https://img.icons8.com/color/48/vue-js.png" },
         {
           name: "Next.js",
           icon: next,
@@ -39,23 +38,6 @@ const Frameworks = () => {
       items: [
         { name: "MERN", icon:mern},
         { name: "MEAN", icon: mean},
-      ],
-    },
-    {
-      category: "AI-Powered Web Tools",
-      items: [
-        {
-          name: "ChatGPT API",
-          icon: chat,
-        },
-        {
-          name: "Gradio",
-          icon: "https://img.icons8.com/ios/50/flow-chart.png",
-        },
-        {
-          name: "Streamlit",
-          icon: stream,
-        },
       ],
     },
   ];

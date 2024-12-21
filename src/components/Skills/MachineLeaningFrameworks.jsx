@@ -28,12 +28,8 @@ const Frameworks = () => {
       category: "Generative AI ",
       items: [
         { name: "Hugging Face Transformers", icon: huggingFace },
-        { name: "Stable Diffusion", icon: stableDiffusion },
-        { name: "DALL·E", icon: Dall }, // Use a relevant icon for DALL·E
         { name: "GPT (OpenAI)", icon: chat },
-        { name: "LangChain", icon: lang },
-        { name: "Runway ML", icon: "https://img.icons8.com/ios/50/runway.png" }, // Use Runway ML icon
-        { name: "DeepArt", icon:Deeep }, // Use DeepArt icon
+        { name: "Diffusers by hugging face", icon: huggingFace },
       ],
     },
     {

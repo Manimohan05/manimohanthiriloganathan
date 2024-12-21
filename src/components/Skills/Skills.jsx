@@ -3,7 +3,8 @@ import './skills.css';
 import ProLanguage from './ProgrammingLanguage';
 import MLFramework from './MachineLeaningFrameworks';
 import Frameworks from './Frameworks';
-import Design from './DesigningTools'
+import Design from './DesigningTools';
+import UIUX from './UIUXDesign';
 
 const Skills = () => {
   return (
@@ -15,6 +16,7 @@ const Skills = () => {
             <Design/>
             <MLFramework/>
             <Frameworks/>
+            <UIUX/>
         </div>
     </section>
   )
