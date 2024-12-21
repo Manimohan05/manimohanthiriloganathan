@@ -4,7 +4,7 @@ import tensorflow from "../../assets/skills/icons8-tensorflow-48.png"; // Add an
 import pytorch from "../../assets/skills/icons8-pytorch-48.png"; // Add an appropriate icon for PyTorch
 import scikitLearn from "../../assets/skills/sciki.png"; // Add an appropriate icon for Scikit-learn
 import huggingFace from "../../assets/skills/icons8-hugging-face-48.png"; // Add an appropriate icon for Hugging Face
-import stableDiffusion from "../../assets/skills/ble.jpeg"; // Add an appropriate icon for Stable Diffusion
+import Diffusers from "../../assets/skills/diffusers.png"; // Add an appropriate icon for Stable Diffusion
 import opencv from "../../assets/skills/icons8-opencv-48.png"; // Add an appropriate icon for Hugging Face
 import keras from "../../assets/skills/icons8-keras-24.png"; 
 import lang from "../../assets/skills/LANG.jpg"; // Add an appropriate icon for Stable Diffusion
@@ -29,7 +29,7 @@ const Frameworks = () => {
       items: [
         { name: "Hugging Face Transformers", icon: huggingFace },
         { name: "GPT (OpenAI)", icon: chat },
-        { name: "Diffusers by hugging face", icon: huggingFace },
+        { name: "Diffusers by hugging face", icon: Diffusers },
       ],
     },
   ];
