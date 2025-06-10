@@ -4,6 +4,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import { allProjects, projectsNav } from "./ProjectsData";
 import { meta, skills } from "../../content_option";
+import outputvideo from "../../assets/photos/VideoV1.mp4";
 
 
 export const Portfolio = () => {
@@ -83,6 +84,32 @@ export const Portfolio = () => {
           </Col>
         </Row>
 
+<Row className="mb-4">
+  <Col>
+    <Card className="h-100 shadow-sm card-light card-blue-text">
+      <div className="ratio ratio-16x9">
+        <video
+          src={outputvideo}
+          autoPlay
+          loop
+          controls
+          style={{
+            width: "100%",
+            objectFit: "cover",
+            borderTopLeftRadius: "0.5rem",
+            borderTopRightRadius: "0.5rem",
+          }}
+        />
+      </div>
+      <Card.Body>
+        <Card.Title className="fw-bold">Final Year Project</Card.Title>
+        <Card.Text className="text-muted">
+          This project demonstrates the automated pick-and-place process using a robotic arm simulation in RoboDK, integrated with trajectory planning verified in MATLAB.
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  </Col>
+</Row>
 
 
         {/* Projects Grid styled like cards */}
