@@ -88,13 +88,13 @@ const filteredProjects = allProjects.filter((project) => {
         </Row>
 
         {/* Filter Buttons */}
-        <Row className="mb-4">
+        <Row className="mb-3">
           <Col>
             <div className="d-flex flex-wrap gap-2">
               {projectsNav.map((nav, index) => (
                 <Button
                   key={index}
-                  variant={selectedCategory === nav.name ? "dark" : "outline-dark"}
+                 variant={selectedCategory === nav.name ? "primary" : "secondary"}
                   onClick={() => setSelectedCategory(nav.name)}
                 >
                   {nav.name}
@@ -111,7 +111,7 @@ const filteredProjects = allProjects.filter((project) => {
         {subcategories.map((sub, index) => (
           <Button
             key={index}
-            variant={selectedSubcategory === sub ? "dark" : "outline-dark"}
+            variant={selectedSubcategory  === sub ? "primary" : "secondary"}
             onClick={() => setSelectedSubcategory(sub)}
           >
             {sub}
