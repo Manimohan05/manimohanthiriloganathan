@@ -7,6 +7,30 @@
     font-size: 3rem;
 }
 
+.about-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.about-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("../../assets/photos/back1.jpg"); /* Replace with your actual image path */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.15; /* Lower for more transparency */
+  z-index: 0;
+}
+
+.about-content {
+  position: relative;
+  z-index: 1;
+}
+
 
 .table td,
 .table th {

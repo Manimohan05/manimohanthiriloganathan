@@ -1,12 +1,5 @@
 // Update image imports accordingly
 import Project1 from "../../assets/photos/project1.jpg";
-import Project2 from "../../assets/photos/project2.jpg";
-import Project3 from "../../assets/photos/project3.jpg";
-import Project4 from "../../assets/photos/project4.jpg";
-import Project5 from "../../assets/photos/project5.jpg";
-import Project6 from "../../assets/photos/project6.jpg";
-import Project7 from "../../assets/photos/project7.jpg";
-import Project8 from "../../assets/photos/project8.jpg";
 import Project9 from "../../assets/photos/project9.jpg";
 import Project10 from "../../assets/photos/project10.jpg";
 import Project11 from "../../assets/photos/project11.jpg";
@@ -27,6 +20,7 @@ import Project25 from "../../assets/photos/project25.jpg";
 import Project26 from "../../assets/photos/universal.jpg";
 import Project27 from "../../assets/photos/project27.jpg";
 import Project28 from "../../assets/photos/project28.jpg";
+import outputvideo from "../../assets/photos/VideoV1.mp4";
 
 export const allProjects = [
   {
@@ -34,7 +28,7 @@ export const allProjects = [
     image: Project27,
     title: "Analog Layout Design",
     category: "Electronics & Telecommunication",
-    subcategory: "Electronics",
+    subcategory: "Electronics Projects",
     Github: "https://github.com/Manimohan05/Analog_Layout_Designs.git",
   },
   {
@@ -42,7 +36,7 @@ export const allProjects = [
     image: Project28,
     title: "Analog Circuit Design",
     category: "Electronics & Telecommunication",
-    subcategory: "Electronics",
+    subcategory: "Electronics Projects",
     Github: "https://github.com/Manimohan05/Analog_IC_Design.git",
   },
   {
@@ -50,7 +44,7 @@ export const allProjects = [
     image: Project13,
     title: "LED Flash",
     category: "Electronics & Telecommunication",
-    subcategory: "Electronics",
+    subcategory: "Electronics Projects",
     Github: "https://github.com/Manimohan05/LED-Flash.git",
   },
   {
@@ -58,7 +52,7 @@ export const allProjects = [
     image: Project14,
     title: "ECG Heart Monitor Lab project",
     category: "Electronics & Telecommunication",
-    subcategory: "Electronics",
+    subcategory: "Electronics Projects",
     Github: "https://github.com/Manimohan05/ECG-Heart-Monitor-Lab-project.git",
   },
   {
@@ -66,7 +60,7 @@ export const allProjects = [
     image: Project15,
     title: "Linear Power supply",
     category: "Electronics & Telecommunication",
-    subcategory: "Electronics",
+    subcategory: "Electronics Projects",
     Github: "https://github.com/Manimohan05/Linear-Power-supply.git",
   },
   {
@@ -74,7 +68,7 @@ export const allProjects = [
     image: Project16,
     title: "Water Level Detector",
     category: "Electronics & Telecommunication",
-    subcategory: "Electronics",
+    subcategory: "Electronics Projects",
     Github: "https://github.com/Manimohan05/Engineering-Design-project_Water-Level-Detector.git",
   },
   {
@@ -82,7 +76,7 @@ export const allProjects = [
     image: Project17,
     title: "MINI UPS",
     category: "Electronics & Telecommunication",
-    subcategory: "Electronics",
+    subcategory: "Electronics Projects",
     Github: "https://github.com/Manimohan05/MINI-UPS.git",
   },
   {
@@ -90,7 +84,7 @@ export const allProjects = [
     image: Project18,
     title: "Autonomus Robot Design",
     category: "Electronics & Telecommunication",
-    subcategory: "Robotics and Autonomus",
+    subcategory: "Robotics and Autonomus Systems Projects",
     Github: "https://github.com/Manimohan05/Robot-Design-and-Competition.git",
   },
   {
@@ -98,7 +92,7 @@ export const allProjects = [
     image: Project19,
     title: "Autonomous Robot Design SLRC",
     category: "Electronics & Telecommunication",
-    subcategory: "Robotics and Autonomus",
+    subcategory: "Robotics and Autonomus Systems Projects",
     Github: "https://github.com/Manimohan05/Sri-Lankan-Robotics-Challenge-SLRC--2023.git",
   },
   {
@@ -106,7 +100,7 @@ export const allProjects = [
     image: Project20,
     title: "Design of Local Area Network",
     category: "Electronics & Telecommunication",
-    subcategory: "Telecommunications ",
+    subcategory: "Telecommunications Projects",
     Github: "https://github.com/Manimohan05/Design-of-Local-Area-Network-Group-Project.git",
   },
   {
@@ -114,7 +108,7 @@ export const allProjects = [
     image: Project21,
     title: "System verilog Max pool",
     category: "Electronics & Telecommunication",
-    subcategory: "FPGA Design & Simulation",
+    subcategory: "FPGA Design & Simulation Projects",
     Github: "https://github.com/Manimohan05/System-verilog-Max-pool.git",
   },
   {
@@ -122,7 +116,7 @@ export const allProjects = [
     image: Project22,
     title: "Processor design ISA Design",
     category: "Electronics & Telecommunication",
-    subcategory: "FPGA Design & Simulation",
+    subcategory: "FPGA Design & Simulation Projects",
     Github: "https://github.com/Manimohan05/Processor-design-ISA-Design-_Group.git",
   },
   {
@@ -130,7 +124,7 @@ export const allProjects = [
     image: Project23,
     title: "FPGA UART System pool",
     category: "Electronics & Telecommunication",
-    subcategory: "FPGA Design & Simulation",
+    subcategory: "FPGA Design & Simulation Projects",
     Github: "https://github.com/Manimohan05/FPGA-Mini-projects-UART-System-pool-.git",
   },
   {
@@ -146,72 +140,18 @@ export const allProjects = [
     image: Project25,
     title: "Digital Signal Processing Assignments",
     category: "Electronics & Telecommunication",
-    subcategory: "Signal & Systems",
+    subcategory: "Signal & Systems Projects",
     Github: "https://github.com/Manimohan05/EN3551---Digital-Signal-Processing-Assignments.git",
   },
-  {
-    id: 16,
-    image: Project1,
-    title: "Densely packed product detection ",
-    category: "AI & CV",
-    subcategory: "All",
-    Github: "https://github.com/Manimohan05/Project--Densely-packed-product-detection.git",
-  },
-  {
-    id: 17,
-    image: Project2,
-    title: "Diabetes Prediction",
-    category: "AI & CV",
-    subcategory: "All",
-    Github: "https://github.com/Manimohan05/Diabetes-Prediction.git",
-  },
-  {
-    id: 18,
-    image: Project3,
-    title: "AI Room Booking Chabot",
-    category: "AI & CV",
-    subcategory: "All",
-    Github: "https://github.com/Manimohan05/ML-Projects.git",
-  },
-  {
-    id: 19,
-    image: Project4,
-    title: "Brain Tumor Detection",
-    category: "AI & CV",
-    subcategory: "All",
-    Github: "https://github.com/Manimohan05/ML-Projects.git",
-  },
-  {
-    id: 20,
-    image: Project5,
-    title: "Human Activity Recognition",
-    category: "AI & CV",
-    subcategory: "All",
-    Github: "https://github.com/Manimohan05/ML-Projects.git",
-  },
-  {
-    id: 21,
-    image: Project6,
-    title: "Wine Quality Prediction",
-    category: "AI & CV",
-    subcategory: "All",
-    Github: "https://github.com/Manimohan05/ML-Projects.git",
-  },
-  {
-    id: 22,
-    image: Project7,
-    title: "Image processing ",
-    category: "AI & CV",
-    subcategory: "All",
-    Github: "https://github.com/Manimohan05/EN3160---Image-processing-Works--Assignments-Codes-.git",
-  },
-  {
-    id: 23,
-    image: Project8,
-    title: "Pattern Recognitions",
-    category: "AI & CV",
-    subcategory: "All",
-    Github: "https://github.com/Manimohan05/EN3150---Pattern-Recognitions-Works-Assignments-Homeworks-.git",
+ 
+
+   {
+    id: 24,
+    image: Project26,
+    title: "Universal Science Academy",
+    category: "Software",
+    subcategory: "ALL",
+    Github: "https://universalscienceacademy.lk/",
   },
   {
     id: 25,
@@ -245,19 +185,58 @@ export const allProjects = [
     subcategory: "All",
     Github: "https://github.com/Manimohan05/Flower-Exchange.git",
   },
-  {
-    id: 24,
-    image: Project26,
-    title: "Universal Science Academy",
-    category: "Software",
-    subcategory: "ALL",
-    Github: "https://universalscienceacademy.lk/",
-  },
+ 
+
+
 ];
+
+export const AICVProjects =[{
+  id: 18,
+  image: Project1,
+  title: "Machine Learning Projects",
+  category: "AI & CV",
+  subcategory: "All",
+  Github: "https://github.com/Manimohan05/ML-Projects.git",
+  description: `
+    This repository contains a collection of machine learning projects focused on real-world applications such as:
+    • Diabetes Prediction  
+    • AI Room Booking Chatbot  
+    • Classification of Arrhythmia  
+    • Brain Tumor Detection  
+    • Human Activity Recognition  
+    • Wine Quality Prediction  
+  `
+},
+];
+
+export const finalYearProject = [{
+ id: 29,
+  video: outputvideo,
+  title: "Multi-Lane Speed Measurement Edge Module with License Plate",
+  category: "Electronics & Telecommunication",
+  subcategory: "Electronics Projects",
+  description: `
+  This project aims to develop an edge module suitable for road speed enforcement in Sri Lanka. Existing systems tailored for large highways are not a good fit due to the lack of lane discipline on Sri Lankan roads, and the high quantity of small vehicles such as motorbikes and three-wheelers. 
+  We are developing a low-cost speed enforcement module that addresses these concerns, and displays the speed and license plate of vehicles in real-time to provide a visual deterrent against overspeeding.
+  Real-time license plate recognition is achieved by implementing quantized neural networks on an FPGA using Xilinx FINN and Brevitas frameworks. 
+  Speed estimation is done using a 77 GHz millimeter-wave radar sensor from Texas Instruments. The speed and license plate data are fused using a data fusion module implemented on the FPGA.
+
+  `
+},];
+
 
 export const projectsNav = [
   { name: "All" },
   { name: "Electronics & Telecommunication" },
   { name: "AI & CV" },
   { name: "Software" },
+];
+
+export const subcategories = [
+  "All",
+  "Electronics Projects",
+  "Robotics and Autonomus Systems Projects",
+  "FPGA Design & Simulation Projects",
+  "Telecommunications Projects",
+  "Signal & Systems Projects"
 ];

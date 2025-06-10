@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./style.css";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
-import { allProjects, projectsNav } from "./ProjectsData";
+import { allProjects, projectsNav ,finalYearProject,AICVProjects , subcategories} from "./ProjectsData";
 import { meta, skills } from "../../content_option";
 import outputvideo from "../../assets/photos/VideoV1.mp4";
 
@@ -10,11 +10,37 @@ import outputvideo from "../../assets/photos/VideoV1.mp4";
 export const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [blogPosts, setBlogPosts] = useState([]);
+  const [selectedSubcategory, setSelectedSubcategory] = useState("All");
 
-  const filteredProjects =
+const filteredProjects = allProjects.filter((project) => {
+  const matchCategory =
+    selectedCategory === "All" ||
+    project.category?.toLowerCase() === selectedCategory.toLowerCase();
+
+  const matchSubcategory =
+    selectedSubcategory === "All" ||
+    project.subcategory?.toLowerCase() === selectedSubcategory.toLowerCase();
+
+  return matchCategory && matchSubcategory;
+});
+
+
+ const filteredProject2 = finalYearProject.filter((project) => {
+  const matchCategory =
+    selectedCategory === "All" ||
+    project.category?.toLowerCase() === selectedCategory.toLowerCase();
+
+  const matchSubcategory =
+    selectedSubcategory === "All" ||
+    project.subcategory?.toLowerCase() === selectedSubcategory.toLowerCase();
+
+  return matchCategory && matchSubcategory;
+});
+
+          const filteredProject3 =
     selectedCategory === "All"
-      ? allProjects
-      : allProjects.filter(
+      ? AICVProjects
+      : AICVProjects.filter(
           (project) =>
             project.category.toLowerCase() === selectedCategory.toLowerCase()
         );
@@ -84,69 +110,150 @@ export const Portfolio = () => {
           </Col>
         </Row>
 
-<Row className="mb-4">
+        <Row className="mb-3">
   <Col>
-    <Card className="h-100 shadow-sm card-light card-blue-text">
-      <div className="ratio ratio-16x9">
-        <video
-          src={outputvideo}
-          autoPlay
-          loop
-          controls
-          style={{
-            width: "100%",
-            objectFit: "cover",
-            borderTopLeftRadius: "0.5rem",
-            borderTopRightRadius: "0.5rem",
-          }}
-        />
-      </div>
-      <Card.Body>
-        <Card.Title className="fw-bold">Final Year Project</Card.Title>
-        <Card.Text className="text-muted">
-          This project demonstrates the automated pick-and-place process using a robotic arm simulation in RoboDK, integrated with trajectory planning verified in MATLAB.
-        </Card.Text>
-      </Card.Body>
-    </Card>
+    <div className="d-flex flex-wrap gap-2">
+      {subcategories.map((sub, index) => (
+        <Button
+          key={index}
+          variant={selectedSubcategory === sub ? "dark" : "outline-dark"}
+          onClick={() => setSelectedSubcategory(sub)}
+        >
+          {sub}
+        </Button>
+      ))}
+    </div>
   </Col>
 </Row>
 
 
-        {/* Projects Grid styled like cards */}
-        <Row xs={1} md={2} lg={3} className="g-4 mb-5">
-          {filteredProjects.map((project, idx) => (
-            <Col key={idx}>
-              <Card className="h-100 shadow-sm card-light card-blue-text">
-                <Card.Img
-                  variant="top"
-                  src={project.image}
-                  alt={project.title}
+        <Row className="mb-4">
+          {filteredProject2.map((project, idx) => (
+          <Col>
+            <Card className="h-100 shadow-sm card-light card-blue-text">
+              <div className="ratio ratio-16x9">
+                <video
+                  src={outputvideo}
+                  autoPlay
+                  loop
+                  controls
                   style={{
-                    height: "180px",
+                    width: "100%",
                     objectFit: "cover",
                     borderTopLeftRadius: "0.5rem",
                     borderTopRightRadius: "0.5rem",
                   }}
                 />
-                <Card.Body className="d-flex flex-column">
-                  <Card.Title className="fw-bold text-truncate">
-                    {project.title}
-                  </Card.Title>
-                  <Card.Text className="text-muted">{project.category}</Card.Text>
-                  <Button
-                    href={project.Github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    variant="outline-primary"
-                    className="mt-auto"
-                  >
-                    View Project
-                  </Button>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
+              </div>
+              <Card.Body>
+                <Card.Title className="fw-bold">Multi-Lane Speed Measurement Edge Module with License Plate</Card.Title>
+                <Card.Text className="text-muted text-white">
+                  <li>This project aims to develop an edge module suitable for road speed enforcement in Sri Lanka. Existing systems tailored for large highways are not a good fit due to the lack of lane discipline on Sri Lankan roads, and the high quantity of small vehicles such as motorbikes and three-wheelers. </li>
+                  <li>We are developing a low-cost speed enforcement module that addresses these concerns, and displays the speed and license plate of vehicles in real-time to provide a visual deterrent against overspeeding.</li>
+                  <li>Real-time license plate recognition is achieved by implementing quantized neural networks on an FPGA using Xilinx FINN and Brevitas frameworks. </li>
+                  <li>Speed estimation is done using a 77 GHz millimeter-wave radar sensor from Texas Instruments. The speed and license plate data are fused using a data fusion module implemented on the FPGA.</li>
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          ))}</Row>
+
+          <Row className="mb-5">
+  {filteredProject3.map((project, idx) => (
+    <Col key={project.id || idx} xs={12}>
+      <Card className="h-100 shadow-sm card-light card-blue-text w-100">
+       <Card.Img
+  variant="top"
+  src={project.image}
+  alt={project.title}
+  style={{
+  width: "100%",
+                    objectFit: "cover",
+                    borderTopLeftRadius: "0.5rem",
+                    borderTopRightRadius: "0.5rem",
+  }}
+/>
+        <Card.Body className="d-flex flex-column">
+          <Card.Title className="fw-bold">{project.title}</Card.Title>
+          <Card.Text className="text-muted">{project.category}</Card.Text>
+
+          {project.description && (
+            <Card.Text className="text-muted">
+              <ul style={{ paddingLeft: "1rem", marginBottom: 0 ,color: "#fff"}}>
+                {project.description
+                  .trim()
+                  .split("\n")
+                  .filter((line) => line.trim() !== "")
+                  .map((line, i) => (
+                    <li key={i}>{line.replace(/•\s?/, "").trim()}</li>
+                  ))}
+              </ul>
+            </Card.Text>
+          )}
+
+          {project.Github && (
+            <Button
+              href={project.Github}
+              target="_blank"
+              rel="noopener noreferrer"
+              variant="outline-primary"
+              className="mt-auto"
+            >
+              View on GitHub
+            </Button>
+          )}
+        </Card.Body>
+      </Card>
+    </Col>
+  ))}
+</Row>
+
+
+
+        {/* Projects Grid styled like cards */}
+<Row xs={1} md={2} lg={3} className="g-4 mb-5">
+  {filteredProjects.map((project, idx) => (
+    <Col key={idx}>
+      <Card className="h-100 shadow-sm card-light card-blue-text">
+        <Card.Img
+          variant="top"
+          src={project.image}
+          alt={project.title}
+          style={{
+            height: "180px",
+            objectFit: "cover",
+            borderTopLeftRadius: "0.5rem",
+            borderTopRightRadius: "0.5rem",
+          }}
+        />
+        <Card.Body className="d-flex flex-column">
+          <Card.Title className="fw-bold text-truncate">
+            {project.title}
+          </Card.Title>
+          <Card.Text className="text-muted mb-2">{project.category}</Card.Text>
+
+          {project.description && (
+  <Card.Text
+    className="mb-3 small"
+    style={{ whiteSpace: 'pre-line', color: '#fff' }}
+  >
+    {project.description}
+  </Card.Text>
+)}
+          <Button
+            href={project.Github}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outline-primary"
+            className="mt-auto"
+          >
+            View Project
+          </Button>
+        </Card.Body>
+      </Card>
+    </Col>
+  ))}
+</Row>
 
          <Row className="sec_sp">
           <Col lg="12">

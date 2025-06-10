@@ -20,6 +20,7 @@ export const About = () => {
 
   return (
     <HelmetProvider>
+      <div className="about-background">
       <Container className="About-header">
         <Helmet>
           <meta charSet="utf-8" />
@@ -110,6 +111,8 @@ export const About = () => {
 
 
       </Container>
+       </div>
     </HelmetProvider>
+   
   );
 };
