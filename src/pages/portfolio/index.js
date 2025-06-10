@@ -83,35 +83,7 @@ export const Portfolio = () => {
           </Col>
         </Row>
 
-<Row className="mb-4">
-  <Col>
-    <Card className="h-100 shadow-sm card-light card-blue-text">
-      {/* Responsive video iframe */}
-      <div className="ratio ratio-16x9">
-        <iframe
-          src="https://drive.google.com/file/d/1fX8xbK4nu32v66yASz26rKyUaBk5TVbC/view?usp=sharing"
-          allow="autoplay"
-          allowFullScreen
-          title="Final Year Project Video"
-          style={{
-            borderTopLeftRadius: "0.5rem",
-            borderTopRightRadius: "0.5rem",
-          }}
-        ></iframe>
-      </div>
 
-      {/* Description below video */}
-      <Card.Body>
-        <Card.Title className="fw-bold">Multi-Lane Speed Measurement Edge Module with License Plate</Card.Title>
-        <Card.Text className="text-muted">
-          <li>This project aims to develop an edge module suitable for road speed enforcement in Sri Lanka. Existing systems tailored for large highways are not a good fit due to the lack of lane discipline on Sri Lankan roads, and the high quantity of small vehicles such as motorbikes and three-wheelers.</li>
-            <li> We are developing a low-cost speed enforcement module that addresses these concerns, and displays the speed and license plate of vehicles in real-time to provide a visual deterrent against overspeeding. Real-time license plate recognition is achieved by implementing quantized neural networks on an FPGA using Xilinx FINN and Brevitas frameworks.</li>
-             <li>Speed estimation is done using a 77 GHz millimeter-wave radar sensor from Texas Instruments. The speed and license plate data are fused using a data fusion module implemented on the FPGA.</li>
-        </Card.Text>
-      </Card.Body>
-    </Card>
-  </Col>
-</Row>
 
         {/* Projects Grid styled like cards */}
         <Row xs={1} md={2} lg={3} className="g-4 mb-5">
