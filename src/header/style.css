@@ -1,0 +1,394 @@
+.site__header {
+    top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.menu__button {
+    color: var(--text-color);
+}
+
+.menu__button:focus,
+.menu__button:hover {
+    color: var(--text-color);
+    box-shadow: unset;
+}
+
+.menu__button svg {
+    width: 2em;
+    height: 2em;
+    fill: var(--text-color-2);
+    color: var(--text-color-2);
+}
+
+.nav_ac {
+    padding: 5px 15px;
+    margin: 0;
+    border: unset;
+    background: var(--primary-color);
+    font-size: 1.25rem;
+    font-family: Marcellus;
+    color: var(--text-color-2);
+    line-height: 2;
+    height: 50px;
+    font-weight: bold;
+    z-index: 1000;
+}
+
+.nav_ac:hover {
+    color: var(--text-color-2);
+}
+
+.br-top,
+.br-bottom,
+.br-right,
+.br-left {
+    position: fixed;
+    z-index: 999999;
+    background: var(--primary-color);
+}
+
+.br-top {
+    top: 0;
+    height: 10px;
+    left: 0;
+    width: 100%;
+}
+
+.br-bottom {
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+}
+
+.br-right {
+    width: 10px;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.br-left {
+    width: 10px;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.cortina__wrapper-menu {
+    position: relative;
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 3em;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.site__navigation {
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+}
+
+.menu__opend {
+    visibility: visible !important;
+}
+
+.main__menu_ul,
+.menu_right {
+    opacity: 0;
+    position: relative;
+    transition: 0.5s;
+    transition-delay: 0s;
+    visibility: hidden;
+    z-index: 100;
+}
+
+.menu_right {
+    text-align: center;
+}
+
+.site__navigation.menu__opend .main__menu_ul,
+.site__navigation.menu__opend .menu_right {
+    opacity: 1;
+    transition-delay: 0.6s;
+    visibility: visible;
+}
+
+.site__navigation .main__menu_ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.site__navigation .main__menu_ul li a {
+    color: var(--text-color);
+    display: block;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.bg__menu {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    will-change: transform;
+    transform: translateY(-100%);
+    transition: .5s ease all;
+}
+
+.menu__opend .bg__menu {
+    transform: translateY(0);
+}
+
+.menu__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden auto;
+}
+
+.the_menu {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    padding-left: 0;
+}
+
+@media (min-width: 992px) {
+    .menu__container {
+        margin-left: 33.3333%;
+    }
+    .the_menu {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+}
+
+.the_menu .menu_item>a {
+    color: var(--text-color-2);
+    line-height: 1;
+    font-size: 2rem;
+    display: inline-block;
+    position: relative;
+    transition: color 250ms cubic-bezier(0, 0, 0.58, 1) 0s;
+    padding: 4px 0px;
+    text-decoration: none;
+    font-family: Marcellus;
+}
+
+.the_menu .menu_item>a:hover {
+    color: var(--text-color-3);
+}
+
+@media (min-width: 768px) {
+    .the_menu .menu_item>a {
+        font-size: 4.8vw;
+    }
+}
+
+.menu_footer {
+    bottom: 0;
+    font-family: Marcellus;
+    font-size: 14px;
+    background: var(--primary-color);
+}
+
+.menu_footer a {
+    color: var(--text-color-2);
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.download-cv-btn {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.download-cv-btn:hover {
+  background-color: #000000;
+}
+
+.dropdown-cv-wrapper {
+  position: relative;
+}
+
+.dropdown-cv-menu {
+  position: absolute;
+  top: 110%;
+  right: 0;
+  background-color: var(--card-light);
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  z-index: 999;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 180px;
+}
+
+.dropdown-cv-menu button {
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.dropdown-cv-menu button:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem;
+  color: #000;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+
+
+.cv-dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.cv-main-button {
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  font-size: 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 6px 15px rgba(0, 123, 255, 0.3);
+}
+
+.cv-main-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #0056b3, #0099cc);
+}
+
+.cv-options {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  width: 220px;
+  z-index: 100;
+}
+
+.cv-option {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.cv-option:hover {
+  background-color: #f0f8ff;
+  color: #007bff;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 80px; /* Adjust distance from the bottom */
+    right: 20px; /* Adjust distance from the right */
+    z-index: 1000; /* Ensure it's above other content */
+    animation: zoomInOut 3s infinite ease-in-out; /* Apply continuous zooming animation */
+  }
+  
+  @keyframes zoomInOut {
+    0% {
+      transform: scale(1); /* Initial size */
+    }
+    50% {
+      transform: scale(1.1); /* Zoom in to 110% */
+    }
+    100% {
+      transform: scale(1); /* Return to original size */
+    }
+  }
+  
+  .whatsapp-icon img {
+    width: 50px; /* Set the width */
+    height: 50px; /* Set the height */
+    object-fit: contain; /* Ensures the icon maintains aspect ratio without stretching */
+    transition: transform 0.2s ease-in-out, border-radius 0.3s ease; /* Smooth transition for transform and border-radius */
+  }
+  
+  @keyframes zoomInOutImg {
+    0% {
+      transform: scale(1); /* Initial size */
+    }
+    50% {
+      transform: scale(1.1); /* Zoom in to 110% */
+    }
+    100% {
+      transform: scale(1); /* Return to original size */
+    }
+  }
+  
+  .whatsapp-icon img {
+    animation: zoomInOutImg 3s infinite ease-in-out; /* Apply continuous zooming animation to the image */
+  }
+  
+  .dark .site__header{
+    background-color: #000000;
+
+  }
+
+.site__header {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* light shadow for light theme */
+}
+
+html[data-theme="dark"] .site__header {
+  background-color: black !important;
+  color: white !important;
+  box-shadow: 0 2px 6px rgba(218, 214, 214, 0.7); /* darker shadow for dark theme */
+}
+
+.the_menu .menu_item a,
+.the_menu .menu_item .my-3 {
+  font-size: 0.875rem; /* Tailwind's text-sm (14px) */
+}

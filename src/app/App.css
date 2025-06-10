@@ -1,0 +1,69 @@
+@media only screen and (max-width: 991px) {
+    .s_c {
+        padding-top: 40px;
+    }
+}
+
+.page-enter {
+    transform: translateY(100%);
+}
+
+.page-enter-active {
+    transform: translateY(0%);
+    transition: all 400ms ease-out;
+}
+
+.page-exit {
+    transform: translateY(0%);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.page-exit-active {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: translateY(-130%);
+    transition: all 400ms ease-out;
+}
+
+@media (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1140px;
+    }
+}
+
+/* Center content on the page */
+.loading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; 
+  background-color: black;
+  color: white;
+  font-size: 1rem; 
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+
+/* Animated fade-in text */
+.loading-text span {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-timing-function: ease-in-out;
+}
+
+/* Keyframes for fade-in */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
