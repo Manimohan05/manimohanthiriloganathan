@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/manimohanthiriloganathan/static/css/main.18c991a5.css",
-    "main.js": "/manimohanthiriloganathan/static/js/main.6805fdbb.js",
+    "main.css": "/manimohanthiriloganathan/static/css/main.b6a8528f.css",
+    "main.js": "/manimohanthiriloganathan/static/js/main.f214829c.js",
     "static/media/VideoV1.mp4": "/manimohanthiriloganathan/static/media/VideoV1.4caf62f509ef79e66aae.mp4",
     "static/media/profile7.jpg": "/manimohanthiriloganathan/static/media/profile7.b01591a354a115a9bfb5.jpg",
     "static/media/project28.jpg": "/manimohanthiriloganathan/static/media/project28.b0d37102b9a7eda9d267.jpg",
@@ -23,7 +23,7 @@
     "index.html": "/manimohanthiriloganathan/index.html"
   },
   "entrypoints": [
-    "static/css/main.18c991a5.css",
-    "static/js/main.6805fdbb.js"
+    "static/css/main.b6a8528f.css",
+    "static/js/main.f214829c.js"
   ]
 }
