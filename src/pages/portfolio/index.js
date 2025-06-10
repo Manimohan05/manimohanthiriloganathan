@@ -13,16 +13,17 @@ export const Portfolio = () => {
   const [selectedSubcategory, setSelectedSubcategory] = useState("All");
 
 const filteredProjects = allProjects.filter((project) => {
-  const matchCategory =
-    selectedCategory === "All" ||
-    project.category?.toLowerCase() === selectedCategory.toLowerCase();
+  const categoryMatch =
+    selectedCategory === "All" || project.category === selectedCategory;
 
-  const matchSubcategory =
-    selectedSubcategory === "All" ||
-    project.subcategory?.toLowerCase() === selectedSubcategory.toLowerCase();
+  const subcategoryMatch =
+    selectedCategory !== "Electronics & Telecommunication" ||
+    selectedSubcategory === "ALL" ||
+    project.subcategory === selectedSubcategory;
 
-  return matchCategory && matchSubcategory;
+  return categoryMatch && subcategoryMatch;
 });
+
 
 
  const filteredProject2 = finalYearProject.filter((project) => {
@@ -37,13 +38,6 @@ const filteredProjects = allProjects.filter((project) => {
   return matchCategory && matchSubcategory;
 });
 
-          const filteredProject3 =
-    selectedCategory === "All"
-      ? AICVProjects
-      : AICVProjects.filter(
-          (project) =>
-            project.category.toLowerCase() === selectedCategory.toLowerCase()
-        );
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -110,21 +104,24 @@ const filteredProjects = allProjects.filter((project) => {
           </Col>
         </Row>
 
-        <Row className="mb-3">
-  <Col>
-    <div className="d-flex flex-wrap gap-2">
-      {subcategories.map((sub, index) => (
-        <Button
-          key={index}
-          variant={selectedSubcategory === sub ? "dark" : "outline-dark"}
-          onClick={() => setSelectedSubcategory(sub)}
-        >
-          {sub}
-        </Button>
-      ))}
-    </div>
-  </Col>
-</Row>
+        {selectedCategory === "Electronics & Telecommunication" && (
+  <Row className="mb-3">
+    <Col>
+      <div className="d-flex flex-wrap gap-2">
+        {subcategories.map((sub, index) => (
+          <Button
+            key={index}
+            variant={selectedSubcategory === sub ? "dark" : "outline-dark"}
+            onClick={() => setSelectedSubcategory(sub)}
+          >
+            {sub}
+          </Button>
+        ))}
+      </div>
+    </Col>
+  </Row>
+)}
+
 
 
         <Row className="mb-4">
@@ -157,56 +154,6 @@ const filteredProjects = allProjects.filter((project) => {
             </Card>
           </Col>
           ))}</Row>
-
-          <Row className="mb-5">
-  {filteredProject3.map((project, idx) => (
-    <Col key={project.id || idx} xs={12}>
-      <Card className="h-100 shadow-sm card-light card-blue-text w-100">
-       <Card.Img
-  variant="top"
-  src={project.image}
-  alt={project.title}
-  style={{
-  width: "100%",
-                    objectFit: "cover",
-                    borderTopLeftRadius: "0.5rem",
-                    borderTopRightRadius: "0.5rem",
-  }}
-/>
-        <Card.Body className="d-flex flex-column">
-          <Card.Title className="fw-bold">{project.title}</Card.Title>
-          <Card.Text className="text-muted">{project.category}</Card.Text>
-
-          {project.description && (
-            <Card.Text className="text-muted">
-              <ul style={{ paddingLeft: "1rem", marginBottom: 0 ,color: "#fff"}}>
-                {project.description
-                  .trim()
-                  .split("\n")
-                  .filter((line) => line.trim() !== "")
-                  .map((line, i) => (
-                    <li key={i}>{line.replace(/•\s?/, "").trim()}</li>
-                  ))}
-              </ul>
-            </Card.Text>
-          )}
-
-          {project.Github && (
-            <Button
-              href={project.Github}
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="outline-primary"
-              className="mt-auto"
-            >
-              View on GitHub
-            </Button>
-          )}
-        </Card.Body>
-      </Card>
-    </Col>
-  ))}
-</Row>
 
 
 

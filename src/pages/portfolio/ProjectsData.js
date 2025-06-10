@@ -132,7 +132,7 @@ export const allProjects = [
     image: Project24,
     title: "Filter design",
     category: "Electronics & Telecommunication",
-    subcategory: "Signal & Systems",
+    subcategory: "Signal & Systems Projects",
     Github: "https://github.com/Manimohan05/Filter-design.git",
   },
   {
@@ -158,7 +158,7 @@ export const allProjects = [
     image: Project9,
     title: "Attendance app",
     category: "Software",
-    subcategory: "All",
+    subcategory: "ALL",
     Github: "https://github.com/Manimohan05/attendance-app.git",
   },
   {
@@ -166,7 +166,7 @@ export const allProjects = [
     image: Project10,
     title: "Chat Application",
     category: "Software",
-    subcategory: "All",
+    subcategory: "ALL",
     Github: "https://github.com/Manimohan05/Chat-Application.git",
   },
   {
@@ -174,7 +174,7 @@ export const allProjects = [
     image: Project11,
     title: "Gaseo",
     category: "Software",
-    subcategory: "All",
+    subcategory: "ALL",
     Github: "https://github.com/Manimohan05/Idealize-2022.git",
   },
   {
@@ -182,32 +182,20 @@ export const allProjects = [
     image: Project12,
     title: "Flower Exchange",
     category: "Software",
-    subcategory: "All",
+    subcategory: "ALL",
     Github: "https://github.com/Manimohan05/Flower-Exchange.git",
   },
- 
-
-
-];
-
-export const AICVProjects =[{
+ {
   id: 18,
   image: Project1,
   title: "Machine Learning Projects",
   category: "AI & CV",
-  subcategory: "All",
-  Github: "https://github.com/Manimohan05/ML-Projects.git",
-  description: `
-    This repository contains a collection of machine learning projects focused on real-world applications such as:
-    • Diabetes Prediction  
-    • AI Room Booking Chatbot  
-    • Classification of Arrhythmia  
-    • Brain Tumor Detection  
-    • Human Activity Recognition  
-    • Wine Quality Prediction  
-  `
-},
+  subcategory: "ALL",
+  Github: "https://github.com/Manimohan05/ML-Projects.git",},
+
+
 ];
+
 
 export const finalYearProject = [{
  id: 29,
@@ -233,7 +221,6 @@ export const projectsNav = [
 ];
 
 export const subcategories = [
-  "All",
   "Electronics Projects",
   "Robotics and Autonomus Systems Projects",
   "FPGA Design & Simulation Projects",
