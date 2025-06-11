@@ -1,16 +1,20 @@
 {
   "files": {
     "main.css": "/manimohanthiriloganathan/static/css/main.b6a8528f.css",
-    "main.js": "/manimohanthiriloganathan/static/js/main.f214829c.js",
+    "main.js": "/manimohanthiriloganathan/static/js/main.775ee300.js",
     "static/media/VideoV1.mp4": "/manimohanthiriloganathan/static/media/VideoV1.4caf62f509ef79e66aae.mp4",
     "static/media/profile7.jpg": "/manimohanthiriloganathan/static/media/profile7.b01591a354a115a9bfb5.jpg",
     "static/media/project28.jpg": "/manimohanthiriloganathan/static/media/project28.b0d37102b9a7eda9d267.jpg",
     "static/media/back1.jpg": "/manimohanthiriloganathan/static/media/back1.6ccefc1846487cb85479.jpg",
     "static/media/project27.jpg": "/manimohanthiriloganathan/static/media/project27.e30ded66f332b48ee4a5.jpg",
+    "static/media/project30.webp": "/manimohanthiriloganathan/static/media/project30.962d4b7661a00e4596f9.webp",
     "static/media/logo-whatsapp-png-46041.png": "/manimohanthiriloganathan/static/media/logo-whatsapp-png-46041.f8fda3382185a5abf7c0.png",
     "static/media/universal.jpg": "/manimohanthiriloganathan/static/media/universal.b9507a284a8689243674.jpg",
+    "static/media/project29.jpg": "/manimohanthiriloganathan/static/media/project29.373635b03bce5bb0012b.jpg",
     "static/media/project1.jpg": "/manimohanthiriloganathan/static/media/project1.7e47b86f02d579a08e20.jpg",
     "static/media/project19.jpg": "/manimohanthiriloganathan/static/media/project19.a444b2e23bf82ecb3d18.jpg",
+    "static/media/project32.jpg": "/manimohanthiriloganathan/static/media/project32.c0e7a9f6546368652e48.jpg",
+    "static/media/project31.jpg": "/manimohanthiriloganathan/static/media/project31.258a4b49fa15348a0058.jpg",
     "static/media/project23.jpg": "/manimohanthiriloganathan/static/media/project23.e7f28756b9db4d7482f5.jpg",
     "static/media/project14.jpg": "/manimohanthiriloganathan/static/media/project14.36448f3bc65352b905a9.jpg",
     "static/media/project13.jpg": "/manimohanthiriloganathan/static/media/project13.80b13599f31ffcdab72e.jpg",
@@ -24,6 +28,6 @@
   },
   "entrypoints": [
     "static/css/main.b6a8528f.css",
-    "static/js/main.f214829c.js"
+    "static/js/main.775ee300.js"
   ]
 }
