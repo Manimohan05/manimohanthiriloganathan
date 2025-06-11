@@ -104,23 +104,24 @@ const filteredProjects = allProjects.filter((project) => {
           </Col>
         </Row>
 
-        {selectedCategory === "Electronics & Telecommunication" && (
-  <Row className="mb-3">
-    <Col>
-      <div className="d-flex flex-wrap gap-2">
-        {subcategories.map((sub, index) => (
-          <Button
-            key={index}
-            variant={selectedSubcategory  === sub ? "primary" : "secondary"}
-            onClick={() => setSelectedSubcategory(sub)}
-          >
-            {sub}
-          </Button>
-        ))}
-      </div>
-    </Col>
-  </Row>
-)}
+       {selectedCategory === "Electronics & Telecommunication" && (
+          <Row className="mb-3">
+            <Col>
+              <p className="fw-bold mb-2">Select a Field:</p> {/* Added line */}
+              <div className="d-flex flex-wrap gap-2">
+                {subcategories.map((sub, index) => (
+                  <Button
+                    key={index}
+                    variant={selectedSubcategory === sub ? "primary" : "secondary"}
+                    onClick={() => setSelectedSubcategory(sub)}
+                  >
+                    {sub}
+                  </Button>
+                ))}
+              </div>
+            </Col>
+          </Row>
+        )}
 
 
 
@@ -158,49 +159,49 @@ const filteredProjects = allProjects.filter((project) => {
 
 
         {/* Projects Grid styled like cards */}
-<Row xs={1} md={2} lg={3} className="g-4 mb-5">
-  {filteredProjects.map((project, idx) => (
-    <Col key={idx}>
-      <Card className="h-100 shadow-sm card-light card-blue-text">
-        <Card.Img
-          variant="top"
-          src={project.image}
-          alt={project.title}
-          style={{
-            height: "180px",
-            objectFit: "cover",
-            borderTopLeftRadius: "0.5rem",
-            borderTopRightRadius: "0.5rem",
-          }}
-        />
-        <Card.Body className="d-flex flex-column">
-          <Card.Title className="fw-bold text-truncate">
-            {project.title}
-          </Card.Title>
-          <Card.Text className="text-muted mb-2">{project.category}</Card.Text>
+        <Row xs={1} md={2} lg={3} className="g-4 mb-5">
+          {filteredProjects.map((project, idx) => (
+            <Col key={idx}>
+              <Card className="h-100 shadow-sm card-light card-blue-text">
+                <Card.Img
+                  variant="top"
+                  src={project.image}
+                  alt={project.title}
+                  style={{
+                    height: "180px",
+                    objectFit: "cover",
+                    borderTopLeftRadius: "0.5rem",
+                    borderTopRightRadius: "0.5rem",
+                  }}
+                />
+                <Card.Body className="d-flex flex-column">
+                  <Card.Title className="fw-bold text-truncate">
+                    {project.title}
+                  </Card.Title>
+                  <Card.Text className="text-muted mb-2">{project.category}</Card.Text>
 
-          {project.description && (
-  <Card.Text
-    className="mb-3 small"
-    style={{ whiteSpace: 'pre-line', color: '#fff' }}
-  >
-    {project.description}
-  </Card.Text>
-)}
-          <Button
-            href={project.Github}
-            target="_blank"
-            rel="noopener noreferrer"
-            variant="outline-primary"
-            className="mt-auto"
+                  {project.description && (
+          <Card.Text
+            className="mb-3 small"
+            style={{ whiteSpace: 'pre-line', color: '#fff' }}
           >
-            View Project
-          </Button>
-        </Card.Body>
-      </Card>
-    </Col>
-  ))}
-</Row>
+            {project.description}
+          </Card.Text>
+        )}
+                  <Button
+                    href={project.Github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    variant="outline-primary"
+                    className="mt-auto"
+                  >
+                    View Project
+                  </Button>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
 
          <Row className="sec_sp">
           <Col lg="12">

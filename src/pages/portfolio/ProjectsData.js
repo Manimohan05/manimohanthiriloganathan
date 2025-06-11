@@ -214,7 +214,7 @@ export const allProjects = [
 
 export const finalYearProject = [{
   video: outputvideo,
-  title: "Multi-Lane Speed Measurement Edge Module with License Plate",
+  title: "Multi-Lane Speed Measurement Edge Module with License Plate Recognition",
   category: "Electronics & Telecommunication",
   subcategory: "Electronics Projects",
   description: `
