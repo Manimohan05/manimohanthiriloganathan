@@ -144,7 +144,7 @@ const filteredProjects = allProjects.filter((project) => {
                 />
               </div>
               <Card.Body>
-                <Card.Title className="fw-bold">Multi-Lane Speed Measurement Edge Module with License Plate</Card.Title>
+                <Card.Title className="fw-bold">Multi-Lane Speed Measurement Edge Module with License Plate Recognition</Card.Title>
                 <Card.Text className="text-muted text-white">
                   <li>This project aims to develop an edge module suitable for road speed enforcement in Sri Lanka. Existing systems tailored for large highways are not a good fit due to the lack of lane discipline on Sri Lankan roads, and the high quantity of small vehicles such as motorbikes and three-wheelers. </li>
                   <li>We are developing a low-cost speed enforcement module that addresses these concerns, and displays the speed and license plate of vehicles in real-time to provide a visual deterrent against overspeeding.</li>
