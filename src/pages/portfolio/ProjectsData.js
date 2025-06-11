@@ -28,7 +28,6 @@ import outputvideo from "../../assets/photos/VideoV1.mp4";
 
 export const allProjects = [
   {
-    id: 1,
     image: Project27,
     title: "Analog Layout Design",
     category: "Electronics & Telecommunication",
@@ -36,7 +35,6 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/Analog_Layout_Designs.git",
   },
   {
-    id: 2,
     image: Project28,
     title: "Analog Circuit Design",
     category: "Electronics & Telecommunication",
@@ -44,7 +42,6 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/Analog_IC_Design.git",
   },
   {
-    id: 3,
     image: Project13,
     title: "LED Flash",
     category: "Electronics & Telecommunication",
@@ -52,7 +49,6 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/LED-Flash.git",
   },
   {
-    id: 4,
     image: Project14,
     title: "ECG Heart Monitor Lab project",
     category: "Electronics & Telecommunication",
@@ -60,7 +56,6 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/ECG-Heart-Monitor-Lab-project.git",
   },
   {
-    id: 5,
     image: Project15,
     title: "Linear Power supply",
     category: "Electronics & Telecommunication",
@@ -68,7 +63,6 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/Linear-Power-supply.git",
   },
   {
-    id: 6,
     image: Project16,
     title: "Water Level Detector",
     category: "Electronics & Telecommunication",
@@ -76,7 +70,6 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/Engineering-Design-project_Water-Level-Detector.git",
   },
   {
-    id: 7,
     image: Project17,
     title: "MINI UPS",
     category: "Electronics & Telecommunication",
@@ -84,7 +77,6 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/MINI-UPS.git",
   },
   {
-    id: 8,
     image: Project18,
     title: "Autonomus Robot Design",
     category: "Electronics & Telecommunication",
@@ -92,23 +84,14 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/Robot-Design-and-Competition.git",
   },
   {
-    id: 9,
     image: Project19,
     title: "Autonomous Robot Design SLRC",
     category: "Electronics & Telecommunication",
     subcategory: "Robotics and Autonomus Systems Projects",
     Github: "https://github.com/Manimohan05/Sri-Lankan-Robotics-Challenge-SLRC--2023.git",
   },
+ 
   {
-    id: 10,
-    image: Project20,
-    title: "Design of Local Area Network",
-    category: "Electronics & Telecommunication",
-    subcategory: "Telecommunications Projects",
-    Github: "https://github.com/Manimohan05/Design-of-Local-Area-Network-Group-Project.git",
-  },
-  {
-    id: 11,
     image: Project21,
     title: "System verilog Max pool",
     category: "Electronics & Telecommunication",
@@ -116,7 +99,6 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/System-verilog-Max-pool.git",
   },
   {
-    id: 12,
     image: Project22,
     title: "Processor design ISA Design",
     category: "Electronics & Telecommunication",
@@ -124,15 +106,20 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/Processor-design-ISA-Design-_Group.git",
   },
   {
-    id: 13,
     image: Project23,
     title: "FPGA UART System pool",
     category: "Electronics & Telecommunication",
     subcategory: "FPGA Design & Simulation Projects",
     Github: "https://github.com/Manimohan05/FPGA-Mini-projects-UART-System-pool-.git",
   },
+   {
+    image: Project20,
+    title: "Design of Local Area Network",
+    category: "Electronics & Telecommunication",
+    subcategory: "Telecommunications Projects",
+    Github: "https://github.com/Manimohan05/Design-of-Local-Area-Network-Group-Project.git",
+  },
   {
-    id: 14,
     image: Project24,
     title: "Filter design",
     category: "Electronics & Telecommunication",
@@ -140,7 +127,6 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/Filter-design.git",
   },
   {
-    id: 15,
     image: Project25,
     title: "Digital Signal Processing Assignments",
     category: "Electronics & Telecommunication",
@@ -150,72 +136,27 @@ export const allProjects = [
  
 
    {
-    id: 24,
-    image: Project26,
-    title: "Universal Science Academy",
-    category: "Software",
-    subcategory: "ALL",
-    Github: "https://universalscienceacademy.lk/",
-  },
-  {
-    id: 25,
-    image: Project9,
-    title: "Attendance app",
-    category: "Software",
-    subcategory: "ALL",
-    Github: "https://github.com/Manimohan05/attendance-app.git",
-  },
-  {
-    id: 26,
-    image: Project10,
-    title: "Chat Application",
-    category: "Software",
-    subcategory: "ALL",
-    Github: "https://github.com/Manimohan05/Chat-Application.git",
-  },
-  {
-    id: 27,
-    image: Project11,
-    title: "Gaseo",
-    category: "Software",
-    subcategory: "ALL",
-    Github: "https://github.com/Manimohan05/Idealize-2022.git",
-  },
-  {
-    id: 28,
-    image: Project12,
-    title: "Flower Exchange",
-    category: "Software",
-    subcategory: "ALL",
-    Github: "https://github.com/Manimohan05/Flower-Exchange.git",
-  },
-
-   {
-    id: 29,
     image: Project29,
     title: "Densely packed product detection ",
     category: "AI & CV",
     subcategory: "All",
     Github: "https://github.com/Manimohan05/Project--Densely-packed-product-detection.git",
   },
-  
    {
-    id: 30,
-    image: Project30,
-    title: "AI_projects_MediaPipe_and_OpenCV",
-    category: "AI & CV",
-    subcategory: "All",
-    Github: "https://github.com/Manimohan05/AI_projects_MediaPipe_and_OpenCV.git",
-  },
- {
-  id: 18,
   image: Project1,
   title: "Machine Learning Projects",
   category: "AI & CV",
   subcategory: "ALL",
   Github: "https://github.com/Manimohan05/ML-Projects.git",},
    {
-    id: 7,
+    image: Project30,
+    title: "AI_projects_MediaPipe_and_OpenCV",
+    category: "AI & CV",
+    subcategory: "All",
+    Github: "https://github.com/Manimohan05/AI_projects_MediaPipe_and_OpenCV.git",
+  },
+
+   {
     image: Project31,
     title: "Image processing ",
     category: "AI & CV",
@@ -223,19 +164,55 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/EN3160---Image-processing-Works--Assignments-Codes-.git",
   },
   {
-    id: 8,
     image: Project32,
     title: "Pattern Recognitions",
     category: "AI & CV",
     subcategory: "All",
     Github: "https://github.com/Manimohan05/EN3150---Pattern-Recognitions-Works-Assignments-Homeworks-.git",
   },
+
+  
+   {
+    image: Project26,
+    title: "Universal Science Academy",
+    category: "Software",
+    subcategory: "ALL",
+    Github: "https://universalscienceacademy.lk/",
+  },
+  {
+    image: Project9,
+    title: "Attendance app",
+    category: "Software",
+    subcategory: "ALL",
+    Github: "https://github.com/Manimohan05/attendance-app.git",
+  },
+  {
+    image: Project10,
+    title: "Chat Application",
+    category: "Software",
+    subcategory: "ALL",
+    Github: "https://github.com/Manimohan05/Chat-Application.git",
+  },
+  {
+    image: Project11,
+    title: "Gaseo",
+    category: "Software",
+    subcategory: "ALL",
+    Github: "https://github.com/Manimohan05/Idealize-2022.git",
+  },
+  {
+    image: Project12,
+    title: "Flower Exchange",
+    category: "Software",
+    subcategory: "ALL",
+    Github: "https://github.com/Manimohan05/Flower-Exchange.git",
+  },
+
 ];
 
 
 
 export const finalYearProject = [{
- id: 29,
   video: outputvideo,
   title: "Multi-Lane Speed Measurement Edge Module with License Plate",
   category: "Electronics & Telecommunication",
