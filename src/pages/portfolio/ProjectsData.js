@@ -20,6 +20,10 @@ import Project25 from "../../assets/photos/project25.jpg";
 import Project26 from "../../assets/photos/universal.jpg";
 import Project27 from "../../assets/photos/project27.jpg";
 import Project28 from "../../assets/photos/project28.jpg";
+import Project29 from "../../assets/photos/project30.webp";
+import Project30 from "../../assets/photos/project29.jpg";
+import Project31 from "../../assets/photos/project31.jpg";
+import Project32 from "../../assets/photos/project32.jpg";
 import outputvideo from "../../assets/photos/VideoV1.mp4";
 
 export const allProjects = [
@@ -185,6 +189,24 @@ export const allProjects = [
     subcategory: "ALL",
     Github: "https://github.com/Manimohan05/Flower-Exchange.git",
   },
+
+   {
+    id: 29,
+    image: Project29,
+    title: "Densely packed product detection ",
+    category: "AI & CV",
+    subcategory: "All",
+    Github: "https://github.com/Manimohan05/Project--Densely-packed-product-detection.git",
+  },
+  
+   {
+    id: 30,
+    image: Project30,
+    title: "AI_projects_MediaPipe_and_OpenCV",
+    category: "AI & CV",
+    subcategory: "All",
+    Github: "https://github.com/Manimohan05/AI_projects_MediaPipe_and_OpenCV.git",
+  },
  {
   id: 18,
   image: Project1,
@@ -192,9 +214,24 @@ export const allProjects = [
   category: "AI & CV",
   subcategory: "ALL",
   Github: "https://github.com/Manimohan05/ML-Projects.git",},
-
-
+   {
+    id: 7,
+    image: Project31,
+    title: "Image processing ",
+    category: "AI & CV",
+    subcategory: "All",
+    Github: "https://github.com/Manimohan05/EN3160---Image-processing-Works--Assignments-Codes-.git",
+  },
+  {
+    id: 8,
+    image: Project32,
+    title: "Pattern Recognitions",
+    category: "AI & CV",
+    subcategory: "All",
+    Github: "https://github.com/Manimohan05/EN3150---Pattern-Recognitions-Works-Assignments-Homeworks-.git",
+  },
 ];
+
 
 
 export const finalYearProject = [{
