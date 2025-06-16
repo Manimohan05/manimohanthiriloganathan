@@ -80,6 +80,32 @@ const filteredProjects = allProjects.filter((project) => {
           <meta name="description" content={meta.description} />
         </Helmet>
 
+
+         <Row className="sec_sp">
+          <Col lg="12">
+            <h3 className="color_sec py-4">Skills</h3>
+            {skills.map((data, i) => (
+              <Row key={i} className="mb-3 align-items-start">
+                <Col md="3" className="fw-bold">
+                  {data.category}
+                </Col>
+                <Col md="9">
+                  <ul className="list-unstyled d-flex flex-wrap gap-1">
+                    {data.items.map((item, index) => (
+                      <li
+                        key={index}
+                        className="badge bg-secondary text-light p-2"
+                      >
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </Col>
+              </Row>
+            ))}
+          </Col>
+        </Row>
+
         <Row className="mb-5 mt-3 pt-md-3">
           <Col lg="8">
             <h1 className="display-4 mb-4">Projects</h1>
@@ -201,31 +227,6 @@ const filteredProjects = allProjects.filter((project) => {
               </Card>
             </Col>
           ))}
-        </Row>
-
-         <Row className="sec_sp">
-          <Col lg="12">
-            <h3 className="color_sec py-4">Skills</h3>
-            {skills.map((data, i) => (
-              <Row key={i} className="mb-3 align-items-start">
-                <Col md="3" className="fw-bold">
-                  {data.category}
-                </Col>
-                <Col md="9">
-                  <ul className="list-unstyled d-flex flex-wrap gap-1">
-                    {data.items.map((item, index) => (
-                      <li
-                        key={index}
-                        className="badge bg-secondary text-light p-2"
-                      >
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </Col>
-              </Row>
-            ))}
-          </Col>
         </Row>
 
         {/* Blog Posts Section */}

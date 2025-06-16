@@ -14,7 +14,7 @@ const introdata = {
         second: " Enthusiastic about developing intelligent solutions using ML/AI.",
         Third: "Skilled in crafting sleek interfaces as a Software and Graphics Engineer.",
     },
-    description: " I am a highly motivated and confident Graduate in the Department of Electronic and Telecommunication Engineering at the University of Moratuwa",
+    description: " I am a highly motivated and confident graduate from the Department of Electronic and Telecommunication Engineering at the University of Moratuwa.",
     your_img_url: profile,
 };
 
