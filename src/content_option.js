@@ -30,6 +30,11 @@ const educationtimeline = [
         date: "Jun 2021 – Jun 2025"
     },
     {
+        jobtitle: "Minor degree in Mathematics",
+        where: "University of Moratuwa",
+        date: "Jun 2021 – Jun 2025"
+    },
+    {
         jobtitle: "Business Degree in CIMA",
         where: "Wisdom Business Academy",
         date: "2020 – 2021"
@@ -73,19 +78,18 @@ const worktimeline = [
 
 const skills = [
    {
-    category: "Modeling, Simulation & Circuit Design",
+    category: "IC Design, Circuit Design and Simulation & 3D Modeling",
     items: [
-        "SolidWorks",
+        "Cadence Virtuoso",
+        "Xschem",
+        "Klayout",
+        "VC Spyclass",
+        "Quartus & ModelSim",
+        "Vivado & Vitis",
         "Altium",
-        "Proteus",
-        "Quartus",
         "MATLAB",
-        "ModelSim",
         "Webots",
         "LTSpice",
-        "Vivado",
-        "Cadence",
-        "VC Spyclass"
     ]
 },
 
@@ -98,15 +102,15 @@ const skills = [
         items: ["Python", "C/C++", "JavaScript", "MATLAB", "LATEX", "SQL", "Java"]
     },
     {
-        category: "Frameworks",
+        category: "Web Development Frameworks",
         items: ["React Native", "React", "Angular", "Django", "Node.js", "Flutter", "Flask"]
     },
     {
-        category: "Development Tools & Platforms",
+        category: "Development Tools & Compilers",
         items: ["Visual Studio", "Git/GitHub", "Jupyter Notebook", "Google Colab"]
     },
     {
-        category: "Designing",
+        category: "Graphic Designing",
         items: ["Photoshop", "Premiere Pro", "After Effects"]
     }
 ];
