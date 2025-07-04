@@ -1,5 +1,5 @@
 // Update image imports accordingly
-import Project1 from "../../assets/photos/project1.jpg";
+import Project1 from "../../assets/photos/project8.jpg";
 import Project9 from "../../assets/photos/project9.jpg";
 import Project10 from "../../assets/photos/project10.jpg";
 import Project11 from "../../assets/photos/project11.jpg";
@@ -18,7 +18,7 @@ import Project24 from "../../assets/photos/project24.jpg";
 import Project26 from "../../assets/photos/universal.jpg";
 import Project27 from "../../assets/photos/project27.jpg";
 import Project28 from "../../assets/photos/project28.jpg";
-import Project29 from "../../assets/photos/project30.webp";
+import Project29 from "../../assets/photos/project1.jpg";
 import Project30 from "../../assets/photos/project29.jpg";
 import outputvideo from "../../assets/photos/VideoV1.mp4";
 
