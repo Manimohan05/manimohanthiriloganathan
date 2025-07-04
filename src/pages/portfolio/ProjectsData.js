@@ -13,17 +13,13 @@ import Project18 from "../../assets/photos/project18.jpg";
 import Project19 from "../../assets/photos/project19.jpg";
 import Project20 from "../../assets/photos/project20.jpg";
 import Project21 from "../../assets/photos/project21.jpg";
-import Project22 from "../../assets/photos/project22.jpg";
 import Project23 from "../../assets/photos/project23.jpg";
 import Project24 from "../../assets/photos/project24.jpg";
-import Project25 from "../../assets/photos/project25.jpg";
 import Project26 from "../../assets/photos/universal.jpg";
 import Project27 from "../../assets/photos/project27.jpg";
 import Project28 from "../../assets/photos/project28.jpg";
 import Project29 from "../../assets/photos/project30.webp";
 import Project30 from "../../assets/photos/project29.jpg";
-import Project31 from "../../assets/photos/project31.jpg";
-import Project32 from "../../assets/photos/project32.jpg";
 import outputvideo from "../../assets/photos/VideoV1.mp4";
 
 export const allProjects = [
@@ -99,13 +95,6 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/System-verilog-Max-pool.git",
   },
   {
-    image: Project22,
-    title: "Processor design ISA Design",
-    category: "Electronics & Telecommunication",
-    subcategory: "FPGA Design & Simulation Projects",
-    Github: "https://github.com/Manimohan05/Processor-design-ISA-Design-_Group.git",
-  },
-  {
     image: Project23,
     title: "FPGA UART System pool",
     category: "Electronics & Telecommunication",
@@ -126,14 +115,6 @@ export const allProjects = [
     subcategory: "Signal & Systems Projects",
     Github: "https://github.com/Manimohan05/Filter-design.git",
   },
-  {
-    image: Project25,
-    title: "Digital Signal Processing Assignments",
-    category: "Electronics & Telecommunication",
-    subcategory: "Signal & Systems Projects",
-    Github: "https://github.com/Manimohan05/EN3551---Digital-Signal-Processing-Assignments.git",
-  },
- 
 
    {
     image: Project29,
@@ -154,21 +135,6 @@ export const allProjects = [
     category: "AI & CV",
     subcategory: "All",
     Github: "https://github.com/Manimohan05/AI_projects_MediaPipe_and_OpenCV.git",
-  },
-
-   {
-    image: Project31,
-    title: "Image processing ",
-    category: "AI & CV",
-    subcategory: "All",
-    Github: "https://github.com/Manimohan05/EN3160---Image-processing-Works--Assignments-Codes-.git",
-  },
-  {
-    image: Project32,
-    title: "Pattern Recognitions",
-    category: "AI & CV",
-    subcategory: "All",
-    Github: "https://github.com/Manimohan05/EN3150---Pattern-Recognitions-Works-Assignments-Homeworks-.git",
   },
 
   
