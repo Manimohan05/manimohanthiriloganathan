@@ -10,7 +10,6 @@ import Project17 from "../../assets/photos/project17.jpg";
 import Project18 from "../../assets/photos/project18.jpg";
 import Project19 from "../../assets/photos/project19.jpg";
 import Project20 from "../../assets/photos/project20.jpg";
-import Project21 from "../../assets/photos/project21.jpg";
 import Project23 from "../../assets/photos/project23.jpg";
 import Project24 from "../../assets/photos/project24.jpg";
 import Project26 from "../../assets/photos/universal.jpg";
@@ -85,13 +84,6 @@ export const allProjects = [
     Github: "https://github.com/Manimohan05/Sri-Lankan-Robotics-Challenge-SLRC--2023.git",
   },
  
-  {
-    image: Project21,
-    title: "System verilog Max pool",
-    category: "Electronics & Telecommunication",
-    subcategory: "FPGA Design & Simulation Projects",
-    Github: "https://github.com/Manimohan05/System-verilog-Max-pool.git",
-  },
   {
     image: Project23,
     title: "FPGA UART System pool",
