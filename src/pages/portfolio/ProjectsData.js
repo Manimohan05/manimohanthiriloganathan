@@ -1,8 +1,6 @@
 // Update image imports accordingly
 import Project1 from "../../assets/photos/project8.jpg";
 import Project9 from "../../assets/photos/project9.jpg";
-import Project10 from "../../assets/photos/project10.jpg";
-import Project11 from "../../assets/photos/project11.jpg";
 import Project12 from "../../assets/photos/project12.jpg";
 import Project13 from "../../assets/photos/project13.jpg";
 import Project14 from "../../assets/photos/project14.jpg";
@@ -152,20 +150,7 @@ export const allProjects = [
     subcategory: "ALL",
     Github: "https://github.com/Manimohan05/attendance-app.git",
   },
-  {
-    image: Project10,
-    title: "Chat Application",
-    category: "Software",
-    subcategory: "ALL",
-    Github: "https://github.com/Manimohan05/Chat-Application.git",
-  },
-  {
-    image: Project11,
-    title: "Gaseo",
-    category: "Software",
-    subcategory: "ALL",
-    Github: "https://github.com/Manimohan05/Idealize-2022.git",
-  },
+ 
   {
     image: Project12,
     title: "Flower Exchange",
