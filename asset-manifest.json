@@ -1,14 +1,16 @@
 {
   "files": {
     "main.css": "/manimohanthiriloganathan/static/css/main.b6a8528f.css",
-    "main.js": "/manimohanthiriloganathan/static/js/main.3581cf4f.js",
+    "main.js": "/manimohanthiriloganathan/static/js/main.13036157.js",
     "static/media/VideoV1.mp4": "/manimohanthiriloganathan/static/media/VideoV1.4caf62f509ef79e66aae.mp4",
     "static/media/profile7.jpg": "/manimohanthiriloganathan/static/media/profile7.b01591a354a115a9bfb5.jpg",
     "static/media/project28.jpg": "/manimohanthiriloganathan/static/media/project28.b0d37102b9a7eda9d267.jpg",
     "static/media/back1.jpg": "/manimohanthiriloganathan/static/media/back1.6ccefc1846487cb85479.jpg",
     "static/media/project27.jpg": "/manimohanthiriloganathan/static/media/project27.e30ded66f332b48ee4a5.jpg",
     "static/media/logo-whatsapp-png-46041.png": "/manimohanthiriloganathan/static/media/logo-whatsapp-png-46041.f8fda3382185a5abf7c0.png",
+    "static/media/PLL.drawio (3).png": "/manimohanthiriloganathan/static/media/PLL.drawio (3).fa594fe6c2ab5c80f9c9.png",
     "static/media/universal.jpg": "/manimohanthiriloganathan/static/media/universal.b9507a284a8689243674.jpg",
+    "static/media/new.jpg": "/manimohanthiriloganathan/static/media/new.51606d25efb31097253d.jpg",
     "static/media/project29.jpg": "/manimohanthiriloganathan/static/media/project29.373635b03bce5bb0012b.jpg",
     "static/media/project1.jpg": "/manimohanthiriloganathan/static/media/project1.7e47b86f02d579a08e20.jpg",
     "static/media/project19.jpg": "/manimohanthiriloganathan/static/media/project19.a444b2e23bf82ecb3d18.jpg",
@@ -24,6 +26,6 @@
   },
   "entrypoints": [
     "static/css/main.b6a8528f.css",
-    "static/js/main.3581cf4f.js"
+    "static/js/main.13036157.js"
   ]
 }
