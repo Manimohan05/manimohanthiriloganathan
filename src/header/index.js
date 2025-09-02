@@ -52,7 +52,7 @@ const Headermain = () => {
       {showOptions && (
         <div className="cv-options">
           <a
-            href="https://drive.google.com/uc?id=1Ye1u7m7qKWvf0lbZFPlCe4ambARdTCdQ"
+            href="https://drive.google.com/uc?export=download&id=1mcynTRNWpotG9zJUfgbKdRMirFU2IOXT"
             target="_blank"
             rel="noopener noreferrer"
             className="cv-option"
@@ -60,7 +60,7 @@ const Headermain = () => {
             ⚡ Electronic Engineer
           </a>
           <a
-            href="https://drive.google.com/uc?id=1KJfqETL1fZE-S7Ow5IejVBZHzPKHZfhi"
+            href="https://drive.google.com/uc?export=download&id=1Kw4mRwnqaIBZ6QRN132JGtqyc6nJFmZt"
             target="_blank"
             rel="noopener noreferrer"
             className="cv-option"
