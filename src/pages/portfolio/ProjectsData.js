@@ -19,7 +19,11 @@ import Project29 from "../../assets/photos/project1.jpg";
 import Project30 from "../../assets/photos/project29.jpg";
 import outputvideo from "../../assets/photos/VideoV1.mp4";
 
+
+
+
 export const allProjects = [
+
   {
     image: Project27,
     title: "Analog Layout Design",
@@ -154,7 +158,6 @@ export const allProjects = [
 ];
 
 
-
 export const finalYearProject = [{
   video: outputvideo,
   title: "Multi-Lane Speed Measurement Edge Module with License Plate Recognition",
@@ -164,9 +167,7 @@ export const finalYearProject = [{
   This project aims to develop an edge module suitable for road speed enforcement in Sri Lanka. Existing systems tailored for large highways are not a good fit due to the lack of lane discipline on Sri Lankan roads, and the high quantity of small vehicles such as motorbikes and three-wheelers. 
   We are developing a low-cost speed enforcement module that addresses these concerns, and displays the speed and license plate of vehicles in real-time to provide a visual deterrent against overspeeding.
   Real-time license plate recognition is achieved by implementing quantized neural networks on an FPGA using Xilinx FINN and Brevitas frameworks. 
-  Speed estimation is done using a 77 GHz millimeter-wave radar sensor from Texas Instruments. The speed and license plate data are fused using a data fusion module implemented on the FPGA.
-
-  `
+  Speed estimation is done using a 77 GHz millimeter-wave radar sensor from Texas Instruments. The speed and license plate data are fused using a data fusion module implemented on the FPGA.`
 },];
 
 

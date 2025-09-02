@@ -5,6 +5,27 @@ import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import { allProjects, projectsNav ,finalYearProject,AICVProjects , subcategories} from "./ProjectsData";
 import { meta, skills } from "../../content_option";
 import outputvideo from "../../assets/photos/VideoV1.mp4";
+import Project31 from "../../assets/photos/pll_layout_with_fillers.png";
+import Project32 from "../../assets/photos/PLL.drawio (3).png";
+
+
+const projects = [
+  {
+    image: Project31,
+    title: "Analog Tapeout Design– a Fractional-N PLL with LC-VCO in SKY130",
+    category: "Electronics & Telecommunication",
+    subcategory: "Electronics Projects",
+    Github: "",
+  },
+  {
+    image: Project32,
+    title: "PFD-CP Type-II Fractional-N PLL Clock Multiplier in IHP SG13G2",
+    category: "Electronics & Telecommunication",
+    subcategory: "Electronics Projects",
+    Github: "https://github.com/SkillSurf/cmos-pll-ihp-sg13g2.git",
+  },
+];
+
 
 
 export const Portfolio = () => {
@@ -182,7 +203,43 @@ const filteredProjects = allProjects.filter((project) => {
           </Col>
           ))}</Row>
 
-
+        <Row className="mb-4">
+      {projects.map((project, idx) => (
+        <Col key={idx}>
+          <Card className="h-100 shadow-sm card-light card-blue-text">
+            <div className="ratio ratio-16x9">
+              <img
+                src={project.image}
+                autoPlay
+                loop
+                controls
+                style={{
+                  width: "100%",
+                  objectFit: "cover",
+                  borderTopLeftRadius: "0.5rem",
+                  borderTopRightRadius: "0.5rem",
+                }}
+              />
+            </div>
+            <Card.Body>
+              <Card.Title>{project.title}</Card.Title>
+              <Card.Text>
+                {project.category} - {project.subcategory}
+              </Card.Text>
+               <Button
+                    href={project.Github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    variant="outline-primary"
+                    className="mt-auto"
+                  >
+                    View Project
+                  </Button>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
 
         {/* Projects Grid styled like cards */}
         <Row xs={1} md={2} lg={3} className="g-4 mb-5">
