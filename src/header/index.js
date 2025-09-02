@@ -52,17 +52,13 @@ const Headermain = () => {
       {showOptions && (
         <div className="cv-options">
           <a
-            href="https://drive.google.com/uc?export=download&id=1mcynTRNWpotG9zJUfgbKdRMirFU2IOXT"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://drive.google.com/uc?id=1BYTuFKoRMhNY39GJNTdALYF7p79FXibj"
             className="cv-option"
           >
             ⚡ Electronic Engineer
           </a>
           <a
-            href="https://drive.google.com/uc?export=download&id=1Kw4mRwnqaIBZ6QRN132JGtqyc6nJFmZt"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://drive.google.com/uc?id=1ivdnnbZ2rlCQ1Rul_aiCXH23H99notha"
             className="cv-option"
           >
             🤖 AI & ML Engineer
@@ -101,26 +97,27 @@ const Headermain = () => {
                   <li className="menu_item">
                     <Link onClick={handleToggle} to="/contact" className="my-3">Contact me</Link>
                   </li>
-                  <li className="menu_item">
-                    <a
-                      onClick={handleToggle}
-                      href="/asset/Electronic_Engineer_Manimohan_T_.pdf"
-                      download="Electronic_Engineer_CV.pdf"
-                      className="my-3"
-                    >
-                      Download CV (Electronic)
-                    </a>
-                  </li>
-                  <li className="menu_item">
-                    <a
-                      onClick={handleToggle}
-                      href="/asset/AI_ML_Engineer_Manimohan_T_.pdf" 
-                      download="AI_ML_Engineer_CV.pdf"
-                      className="my-3"
-                    >
-                      Download CV (AI/ML)
-                    </a>
-                  </li>
+                 <li className="menu_item">
+  <a
+    onClick={handleToggle}
+    href="https://drive.google.com/uc?id=1BYTuFKoRMhNY39GJNTdALYF7p79FXibj"
+    download="Electronic_Engineer_CV.pdf"
+    className="my-3"
+  >
+    ⚡ Electronic Engineer
+  </a>
+</li>
+<li className="menu_item">
+  <a
+    onClick={handleToggle}
+    href="https://drive.google.com/uc?id=1ivdnnbZ2rlCQ1Rul_aiCXH23H99notha"
+    download="AI_ML_Engineer_CV.pdf"
+    className="my-3"
+  >
+    🤖 AI & ML Engineer
+  </a>
+</li>
+
                 </ul>
               </div>
             </div>

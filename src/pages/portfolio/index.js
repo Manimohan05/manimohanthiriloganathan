@@ -5,8 +5,8 @@ import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import { allProjects, projectsNav ,finalYearProject,AICVProjects , subcategories} from "./ProjectsData";
 import { meta, skills } from "../../content_option";
 import outputvideo from "../../assets/photos/VideoV1.mp4";
-import Project31 from "../../assets/photos/pll_layout_with_fillers.png";
-import Project32 from "../../assets/photos/PLL.drawio (3).png";
+import Project32 from "../../assets/photos/new.jpg";
+import Project31 from "../../assets/photos/PLL.drawio (3).png";
 
 
 const projects = [
@@ -19,7 +19,7 @@ const projects = [
   },
   {
     image: Project32,
-    title: "PFD-CP Type-II Fractional-N PLL Clock Multiplier in IHP SG13G2",
+    title: "Analog Tapeout Design - PFD-CP Type-II Fractional-N PLL Clock Multiplier in IHP SG13G2",
     category: "Electronics & Telecommunication",
     subcategory: "Electronics Projects",
     Github: "https://github.com/SkillSurf/cmos-pll-ihp-sg13g2.git",
