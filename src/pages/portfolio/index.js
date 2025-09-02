@@ -203,7 +203,7 @@ const filteredProjects = allProjects.filter((project) => {
           </Col>
           ))}</Row>
 
-        <Row className="mb-4">
+        <Row xs={1} md={1} lg={2} className="mb-4">
       {projects.map((project, idx) => (
         <Col key={idx}>
           <Card className="h-100 shadow-sm card-light card-blue-text">
